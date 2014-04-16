@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+.btn-slide {
+  position: fixed;
+  top:50%;
+  left:50%;
+ margin-top:-50px;
+ margin-left:-500px;
+  display: inline-block;
+  height:100px;
+  width: 1000px;
+	line-height:75px;
+		text-align:center;
+  padding-left: 110px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+ 
+  border-radius: 70px;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;  
+ 
+  transition: .5s;
+  -webkit-transition: .5s;
+ 
+  border: 4px solid #CCC;
+}
+  .btn-slide:hover {
+    background-color: #000000;
+  }
+    .btn-slide:hover span.slider {
+      left: 100%;
+      margin-left: -145px;
+      background-color: #CCC;
+    }
+    .btn-slide:hover span.title {
+      left: 550px;
+      opacity: 0;
+    }
+    .btn-slide:hover span.title-hover {
+      opacity: 1;
+      left: 170px;
+    }
+ 
+  .btn-slide span.slider {
+ 
+ 
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height:100px;
+	background-image: url(images/Unlock.png);
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left: 0;
+ 
+    transition: .5s;
+    -webkit-transition: .5s;
+ 
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+ 
+  .btn-slide span.title,
+  .btn-slide span.title-hover { 
+    position: absolute;
+    left: 400px;
+    transition: .5s;
+    -webkit-transition: .5s;
+  }
+ 
+  .btn-slide span.title-hover {
+    left: 50px; 
+    opacity: 0;
+  }

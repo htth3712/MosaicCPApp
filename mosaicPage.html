@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tampines Community Mosaic App- Mosaic Gallery</title>
+<script type="text/javascript">
+	if(localStorage.pageCount){
+		localStorage.pageCount= Number(localStorage.pageCount)+1;
+	}
+	else{
+		localStorage.pageCount=1;
+	}
+	
+	document.write("Residents Visited: "+localStorage.pageCount+" time(s).");
+</script>
+</head>
+
+<body>
+<img src="images/friends-small.jpg"  alt="Friends(s)"  title="Friends(s)"></img>
+<img src="images/friends-middle.jpg" alt="Friends(m)"   title="Friends(m)"></img>
+<img src="images/friends-large.jpg"  alt="Friends(l)"   title="Friends(l)"></img>
+</body>
+</html>
